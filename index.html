@@ -1,0 +1,55 @@
+<!-- Hidden comment -->
+<!-- <!DOCTYPE html> -->
+<!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> -->
+    <html>
+        
+        <style>
+    #compatmodetext {
+        color: green;
+        font-size: xx-large;
+    }
+</style>
+
+<body>
+    <img src="data:image/gif;base64,R0lGODlhEAAOALMAAOazToeHh0tLS/7LZv/0jvb29t/f3//Ub/
+        /ge8WSLf/rhf/3kdbW1mxsbP//mf///yH5BAAAAAAALAAAAAAQAA4AAARe8L1Ekyky67QZ1hLnjM5UUde0ECwLJoExKcpp
+        V0aCcGCmTIHEIUEqjgaORCMxIC6e0CcguWw6aFjsVMkkIr7g77ZKPJjPZqIyd7sJAgVGoEGv2xsBxqNgYPj/gAwXEQA7" width="16"
+        height="14" alt="embedded folder icon">
+
+    <br>
+    <h1>Which mode is running?</h1>
+    <h3>Compatibilty mode(quirk mode = "BackCompat") (standards mode = "CSS1Compat") </h1>
+        <div id="compatmodetext">loading...</div>
+        <br>
+        <h2>Example of tables not rendering correctly in quirk mode</h2>
+        <div style="color: purple;">
+            <p>Some text</p> <!-- text here is purple -->
+            <table>
+                <tr>
+                    <td>Table cell 1</td> <!-- text here is NOT purple -->
+                    <td>Table cell 2</td> <!-- text here is NOT purple -->
+                </tr>
+            </table>
+            Another text
+            <!-- text here is purple -->
+        </div>
+</body>
+<script>
+    // Set 'loading...' to broswer compatMode
+     document.getElementById("compatmodetext").innerText = document.compatMode
+
+    //  [How do I get an HTML comment with javascript - Stack Overflow](https://stackoverflow.com/questions/13363946/how-do-i-get-an-html-comment-with-javascript)
+    function filterNone() {
+        return NodeFilter.FILTER_ACCEPT;
+    }
+    let rootElem = document.body
+    var iterator = document.createNodeIterator(rootElem, NodeFilter.SHOW_COMMENT, filterNone, false);
+    console.log(iterator.nextNode().nodeValue)
+    
+    console.log(document.childNodes[0])
+    console.log(document.childNodes[1])
+    console.log(document.childNodes[2])
+
+</script>
+
+</html>
