@@ -84,6 +84,10 @@ console.log(document.childNodes[0])
 # [Live DOM Viewer](https://software.hixie.ch/utilities/js/live-dom-viewer/)
 ---------------
 
+---------------
+# cool animated favicon demo
+#### [Canvas-Favicon Circular Loader](https://rpsthecoder.github.io/favicon-canvas-loader/)
+#### github repo [rpsthecoder/favicon-canvas-loader: Create and display a circular loading <canvas> animation as a webpage favicon.](https://github.com/rpsthecoder/favicon-canvas-loader)
 # Contributors
 
 [![](https://contrib.rocks/image?repo=wisehackermonkey/html-quirk-mode)](https://github.com/wisehackermonkey/html-quirk-mode/graphs/contributors)
@@ -227,6 +231,7 @@ ______________________
 # Related 
 ### [_________](https://www.____________.com)
  -->
+
 
 
 
